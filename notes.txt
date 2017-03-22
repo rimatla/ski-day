@@ -1,0 +1,63 @@
+- We've used Redux to construct the client data layer, for our application.
+- Now it is time to incorporate the user interface layer (React), with our new store.
+- Run both
+$npm start
+$npm run suggestions
+
+*************************************************************************************************************************************************
+REACT REDUX
+- We need to integrate our Redux store with our React user interface
+- To do this, we're going to be using a library, called React Redux.
+- React Redux helps us integrate our store with our React components.
+
+
+*************************************************************************************************************************************************
+PROVIDER
+- To integrate, and incorporate the store, is into our routes
+- We need to pass the store down, to our component tree.
+- React Redux has a tool that we can use, to do that.
+- It's a component called the Provider. Let's go ahead, and import the Provider.
+- It is a component that you can wrap around any component tree, and it will place the store in Context.
+- Context is a feature, that will allow any child React component to interact with the store, if they want to.
+- Now under any of the stateless components, we will have access to the store property, via Context
+
+*************************************************************************************************************************************************
+PROJECT TREE DIRECTORIES
+- src/components/ui = User interface components are pure react components.
+- These components communicate SOLELY through properties.
+- They pass data back up to their parents through two-way data binding and they receive data from properties as well.
+- These are the components that you develop in the React Essentials Class.
+
+- src/components/containers = In the Container components, we have components named the exact same name as our UI components.
+- These components are wrappers.
+- They will wrap around our UI component and feed data to it.
+
+*************************************************************************************************************************************************
+CUSTOM ERROR
+- On JavaScript console, dispatch a ADD_ERROR.
+
+*add custom error
+store.dispatch({ type: "ADD_ERROR", payload: "you broke it"})
+
+- When dispatching this action, you will notice that the error pops up.
+- You can see here in the console, the log notifying us, that we have dispatched an ADD_ERROR action, and doing so creates one error.
+- That error is being displayed to the user.
+- When the user closes this error,
+- We dispatch a CLEAR_ERROR action.
+- Which removes our error.
+- So we have effectively integrated the state of errors with our React component.
+
+*************************************************************************************************************************************************
+USEFUL COMMANDS
+$npm start
+$npm run suggestions
+
+*console
+localStorage.clear()
+store.getState()
+
+*add custom error
+store.dispatch({ type: "ADD_ERROR", payload: "you broke it"})
+
+
+
