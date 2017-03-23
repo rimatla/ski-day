@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch =>
     ({
         //handle the event bellow
         onNewGoal(goal) {
-            //take goal and dispatch a setGoal action creator
+            //take goal and dispatch a setGoal action creatorwire
             dispatch(
                 setGoal(goal)
             )

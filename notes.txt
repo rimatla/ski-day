@@ -1,3 +1,10 @@
+*************************************************************************************************************************************************
+ - a React user interface that relies on a Redux store.
+ - The only way to change data is to dispatch an action, and as the data in our application changes:
+ - We can see a trail of actions that serve as a transaction log that show us how our state has mutated.
+
+*************************************************************************************************************************************************
+
 - We've used Redux to construct the client data layer, for our application.
 - Now it is time to incorporate the user interface layer (React), with our new store.
 - Run both
