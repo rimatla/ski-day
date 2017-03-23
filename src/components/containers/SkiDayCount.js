@@ -2,7 +2,7 @@
 import SkiDayCount from '../ui/SkiDayCount'
 import { connect } from 'react-redux'
 
-/**create a container that will actually map data from our store to properties from the SkiDayCount.*/
+/**create a container that will actually map data from our store to properties from the SkiDayCount ui component.*/
 
 //map the state from the store to properties in SkiDayCount component
 const mapStoreToProps = (state) => {
@@ -20,10 +20,11 @@ const Container = connect(mapStoreToProps)(SkiDayCount); //UI component that we 
 
 export default Container;
 
-
-/**Previously hard coded*/
-// export default () =>
-// 	<SkiDayCount total={100} powder={25} backcountry={10} />
+/******************************************************************************************************************************************
+ * Previously hard coded
+ * export default () =>
+ * <SkiDayCount total={100} powder={25} backcountry={10} />
+ * */
 
 
 

@@ -32,7 +32,8 @@ const mapDispatchToProps = dispatch => { //pass store's dispatch function as an 
 export default connect(mapStateToProps,mapDispatchToProps)(ShowErrors)
 
 
-//
-// export default () =>
-// 	<ShowErrors errors={['sample error']}
-// 						  onClearError={index => console.log('todo: clear error at', index)} />
+/***************************************************************************************************************************************************************************
+ *  export default () =>
+ <ShowErrors errors={['sample error']}
+ onClearError={index => console.log('todoLater: clear error at', index)} />
+ */

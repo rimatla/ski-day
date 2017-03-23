@@ -31,8 +31,6 @@ const store = storeFactory(initialState); //send-in the initial state data
 //setup a listener
 store.subscribe(saveState);
 
-
-
 //globally expose React and Store to dev console
 window.React = React;
 window.store = store;
