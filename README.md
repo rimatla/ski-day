@@ -5,3 +5,5 @@
 ##### We can see a trail of actions that serve as a transaction log that show us how our state has mutated.
 
 ![alt text](cover.PNG?raw=true "app image")
+
+*tutorial by Alex Banks and Eve Porcello 
